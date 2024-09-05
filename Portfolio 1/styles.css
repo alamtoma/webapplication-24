@@ -12,9 +12,10 @@ body {
   }
   
   main {
-    display: flex;
+    display: flexbox;
     justify-content: space-between;
     padding: 20px;
+    background-color:rgb(195, 195, 202);
   }
   
   #prosjekt-liste {
@@ -72,6 +73,20 @@ body {
   }
   
   button#kansellere:hover {
-    background-color: #5a6268;
+    background-color: #f57607;
   }
+  aside {
+   
+    margin: 10px;
+    padding: 10px;
+ 
+  }
+  
+  aside img {
+ width: 100%;
+
+  }
+
+  
+  
   

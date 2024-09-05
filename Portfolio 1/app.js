@@ -33,9 +33,7 @@ document.getElementById('prosjekt-skjema').addEventListener('submit', event => {
               <td>${prosjekt.beskrivelse}</td>
               <td>${prosjekt.status}</td>
               <td>
-                <button>Rediger</button>
-                <button>Slett</button>
-              </td>
+                
             `;
             tbody.appendChild(row);
           });

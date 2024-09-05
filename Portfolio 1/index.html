@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prosjektoversikt</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Prosjektoversikt</h1>
+  </header>
+  <main>
+    <section id="prosjekt-liste">
+      <table>
+        <thead>
+          <tr>
+            <th>Prosjektnavn</th>
+            <th>Beskrivelse</th>
+            <th>Status</th>
+            <th>Handlinger</th>
+          </tr>
+        </thead>
+        <tbody id="prosjekt-tabelldata">
+          <!-- Prosjektene vil bli lagt til her via JavaScript -->
+        </tbody>
+      </table>
+    </section>
+    <section id="opprett-prosjekt">
+      <h2>Opprett Nytt Prosjekt</h2>
+      <form id="prosjekt-skjema">
+        <label for="navn">Prosjektnavn:</label>
+        <input type="text" id="navn" name="navn" required>
+        <label for="beskrivelse">Beskrivelse:</label>
+        <textarea id="beskrivelse" name="beskrivelse" required></textarea>
+        <label for="startdato">Startdato:</label>
+        <input type="date" id="startdato" name="startdato" required>
+        <label for="sluttdato">Sluttdato:</label>
+        <input type="date" id="sluttdato" name="sluttdato" required>
+        <label for="status">Status:</label>
+        <select id="status" name="status">
+          <option value="Planlagt">Planlagt</option>
+          <option value="Pågående">Pågående</option>
+          <option value="Fullført">Fullført</option>
+        </select>
+        <button type="submit">Lagre</button>
+        <button type="button" id="kansellere">Kansellere</button>
+      </form>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
